@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+
+body {
+    background: #121212; 
+    color: #fff; 
+    padding: 32px; 
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex; 
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.card {
+    background: transparent;
+    border-radius: 50px;
+    overflow: hidden; 
+    width: 140px; 
+    height: 80vh; 
+    transition: .5s ease; 
+    border: 0px solid #515151; 
+    margin-right: 24px; 
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%; 
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.card p {
+    
+    text-align: center;
+    font-size: 24px;
+    bottom: 50px; 
+    left: 20px;  
+    margin: 0;  
+    position: relative; 
+    opacity: 100; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card:hover {
+    cursor: pointer; 
+    width: 100%; 
+    border: 10px solid #c7d80e; 
+}
+
+#card:hover { animation:wobble-horizontal-top .8s linear both} 
+@keyframes wobble-horizontal-top{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(6deg)}30%{transform:translateX(15px) rotate(-6deg)}45%{transform:translateX(-15px) rotate(3.6deg)}60%{transform:translateX(9px) rotate(-2.4deg)}75%{transform:translateX(-6px) rotate(1.2deg)}}
